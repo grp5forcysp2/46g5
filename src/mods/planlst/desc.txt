@@ -1,0 +1,2 @@
+Windows: liste les taches planifiées.
+Linux: liste les crontab

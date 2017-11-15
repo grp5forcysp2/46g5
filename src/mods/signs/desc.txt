@@ -1,0 +1,2 @@
+Linux: md5sum des fichiers presents dans /tmp /var/tmp
+Windows: md5sum des fichiers dans %temp%

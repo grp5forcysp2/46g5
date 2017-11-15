@@ -4,7 +4,12 @@ version='0.1'
 here = ''
 
 def hello():
-    print("46g5 version:%s" %version)
+    hello = '''
+==========================================================================
+=========                46g5v:%s           =============================
+==========================================================================
+    ''' % version
+    print(hello)
 
 def usage():
     print(Usage)
@@ -30,18 +35,23 @@ def getallmods():
     return mods
     
 def parseargs(target):
-    print(sys.argv)
+
     args = sys.argv[1:]
     mods = []
-    if args[0] == '-a':
-        mods = getallmods()
+    
+    if len(args) == 0:
+         mods = ['usage']
     else:
-        if len(args) == 0:
-           mods = ['usage']
+        if args[0] == '-a':
+            mods = getallmods()
         else:
            for a in args:
                if modexist(a,target):
                   mods.append(a)
+               #
+            #
+        #
+    #
     return mods
 
 def runmods(mod,target):
@@ -58,19 +68,17 @@ def runmods(mod,target):
 
 def getcurOS():
     pf = platform.system()
-    print('running on %s'% pf)
+    print('OS: %s'% pf)
     return pf
 
 def run46g5():
-    target = getcurOS()
     hello()
+    target = getcurOS()
     mods = parseargs(target)
     for mod in mods:
         runmods(mod,target)
 
 if __name__ == '__main__':
-        #here = os.path.dirname(__file__)
         here = os.path.dirname(os.path.abspath(__file__))
-        print("here: %s"%here)
         sys.exit(run46g5())
     

@@ -1,0 +1,2 @@
+Windows: affiche les logs avec psloglist
+Linux: TODO (copie ou affiche ?)

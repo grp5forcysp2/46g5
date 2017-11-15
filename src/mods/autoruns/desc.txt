@@ -1,0 +1,2 @@
+Windows: liste les programmes persistants avec autorunsc.
+Linux: TODO
