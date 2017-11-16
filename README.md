@@ -8,7 +8,7 @@ usage:
  python 46g5.py [-a] [mod1]  ... [modn]
    mod(n) designe un module d'investigation.
  Les modules disponibles se trouvent dans le repertoire ./mods/ .
- Ceux sont des repertoires du nom du module, contenant:
+ Ce sont des repertoires du nom du module, contenant:
   - un script shell:           run.sh
   - un script powershell:      run.ps1
   - un fichier de description: desc.txt
@@ -60,7 +60,7 @@ affiche la configuration reseau
 
 -- logs:
 Windows: affiche les logs avec psloglist
-Linux: TODO (copie ou affiche ?)
+Linux: Affiche la liste des logs et les tar localement si la place est suffisante.
 
 -- network:
 Affiche les connections reseau en cours.
