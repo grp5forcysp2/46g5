@@ -2,7 +2,7 @@
 echo " python 46g5.py [-a] [mod1]  ... [modn]"
 echo "   mod(n) designe un module d'investigation."
 echo " Les modules disponibles se trouvent dans le repertoire ./mods/ ."
-echo " Ceux sont des repertoires du nom du module, contenant:"
+echo " Ce sont des repertoires du nom du module, contenant:"
 echo "  - un script shell:           run.sh"
 echo "  - un script powershell:      run.ps1"
 echo "  - un fichier de description: desc.txt"

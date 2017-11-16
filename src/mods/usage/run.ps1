@@ -2,7 +2,7 @@
 write-host  " python 46g5.py [-a] [mod1]  ... [modn]"
 write-host  "   mod(n) designe un module d'investigation."
 write-host  " Les modules disponibles se trouvent dans le repertoire ./mods/ ."
-write-host  " Ceux sont des repertoires du nom du module, contenant:"
+write-host  " Ce sont des repertoires du nom du module, contenant:"
 write-host  "  - un script shell:           run.sh"
 write-host  "  - un script powershell:      run.ps1"
 write-host  "  - un fichier de description: desc.txt"
