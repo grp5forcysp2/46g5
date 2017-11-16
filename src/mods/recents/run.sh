@@ -1,2 +1,2 @@
-find / -type f -atime 1 2>/dev/null
+find /root /bin /var/log /tmp /etc/ /home -type f -ctime 1 -ls
 exit 0
