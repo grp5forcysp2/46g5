@@ -1,4 +1,4 @@
-import sys, subprocess, os, platform
+import sys, subprocess, os, platform, ctypes
 version='0.1'
 
 here = ''
@@ -71,8 +71,24 @@ def getcurOS():
     print('OS: %s'% pf)
     return pf
 
+
+def is_user_admin():
+    try:
+       return os.getuid() == 0
+    except AttributeError:
+        pass
+    try:
+       return ctypes.windll.shell32.IsUserAnAdmin() == 1
+    except AttributeError:
+       return False 
+
+
 def run46g5():
     hello()
+    if not is_user_admin():
+        print("Veuillez utiliser un compte administrateur.")
+        return
+
     target = getcurOS()
     mods = parseargs(target)
     for mod in mods:
