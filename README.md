@@ -42,12 +42,21 @@ Affiche l'usage
 Windows: liste les programmes persistants avec autorunsc.
 Linux: TODO
 
+-- hostinfo:
+Affiche des informations sur l'hote.
+
+-- ug:
+Utilisateurs et groupes
+
 -- planlst:
 Windows: liste les taches planifiées.
 Linux: liste les crontab
 
 -- ps:
 Liste des processus
+
+-- netconf:
+affiche la configuration reseau
 
 -- logs:
 Windows: affiche les logs avec psloglist
