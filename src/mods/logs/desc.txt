@@ -1,2 +1,2 @@
 Windows: affiche les logs avec psloglist
-Linux: TODO (copie ou affiche ?)
+Linux: Affiche la liste des logs et les tar localement si la place est suffisante.
